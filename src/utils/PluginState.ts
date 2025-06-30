@@ -42,7 +42,7 @@ export default class PluginState {
     this._globalState = globalState
     globalState.setKeysForSync(['chapter', 'dictKey'])
 
-    this._dictKey = globalState.get('dictKey', 'cet4')
+    this._dictKey = globalState.get('dictKey', 'ielts')
     this.dict = idDictionaryMap[this._dictKey]
     this.dictWords = []
     this.hideDictName = false
